@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap cdn link  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- external css sheet link  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- favicon logo   -->
+    <link rel="shortcut icon" href="https://e7.pngegg.com/pngimages/386/388/png-clipart-computer-icons-sign-up-button-miscellaneous-text-thumbnail.png" type="image/x-icon">
+    <title>Sign Up</title>
+</head>
+<body>
+    <!-- main container start  -->
+    <div class="container">
+        <form id="signupForm" onsubmit="return Signup(event)">
+            <h2 style="text-align: center; font-weight: bold;padding: 10px;">SIGN UP</h2>
+            <label for="username"><i class="fa-solid fa-user"></i> Username:</label>
+            <input type="text" id="username" name="username" required>
+            <span class="error" id="usernameError"></span>
+
+            <label for="password"><i class="fa-solid fa-lock"></i> Password:</label>
+            <input type="password" id="password" name="password" maxlength="8" required>
+            <span class="error" id="passwordError"></span>
+
+            <label for="email"> <i class="fa-solid fa-envelope"></i> Email:</label>
+            <input type="email" id="email" name="email" required>
+            <span class="error" id="emailError"></span>
+
+            <label for="pnumber">  <i class="fa-solid fa-phone"></i> Phone number:</label>
+            <input type="text" id="pnumber" name="pnumber" required>
+            <span class="error" id="pnumberError"></span>
+
+            <button type="submit">Signup</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Login</a></p>
+    </div>
+    <!-- main container end   -->
+
+    <!-- external js link  -->
+    <script src="script.js"></script>
+</body>
+</html>

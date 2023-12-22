@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap cdn link  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- External css sheet link  -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- favicon logo icon  -->
+    <link rel="shortcut icon" href="https://e7.pngegg.com/pngimages/386/388/png-clipart-computer-icons-sign-up-button-miscellaneous-text-thumbnail.png" type="image/x-icon">
+    <title>Login</title>
+</head>
+<body style="background-image: url(https://cdn.wallpapersafari.com/67/96/AaGPUx.jpg);">
+    <div class="container">
+        <form id="loginForm" onsubmit="return Login()">
+            <h2 style="text-align: center; font-weight: bold;">LOGIN HERE!!</h2>
+            <label for="username"><i class="fa-solid fa-user"></i> Username:</label>
+            <input type="text" id="username" name="username" required>
+            <span class="error" id="usernameError"></span>
+
+            <label for="password"> <i class="fa-solid fa-lock"></i> Password:</label>
+            <input type="password" id="password" name="password" required>
+            <span class="error" id="passwordError"></span>
+
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="index.html">Signup</a></p>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
